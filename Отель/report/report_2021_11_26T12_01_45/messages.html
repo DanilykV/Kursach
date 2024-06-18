@@ -1,0 +1,722 @@
+
+<html>
+    <head>
+        <meta content='IE=EmulateIE9' http-equiv='X-UA-Compatible' />
+        <meta content='text/html;charset=UTF-8' http-equiv='Content-Type' />
+        <script type='text/javascript' src='js/functions.js'></script>
+        <script type='text/javascript' src='js/messages.js'></script>
+        <link media='all' rel='stylesheet' type='text/css' href='css/messages.css' />
+    </head>
+    <body id='messages-body' scroll='no' onresize='buttonStatusReset();'>
+        <a id='expander_td' class='expander_td' tab-index='0' onclick='showMessages(!isExpanded());return false;' role='button' aria-label='Messages section expanded, press Enter to collapse' href='javascript:void(0);'>
+          <span></span>
+        </a>
+        <div class='main-messages' id='mainDiv'>
+            <div class='panel'>
+                <a id='error' href='javascript:void(0);' role='tab' class='button' onclick='severityTabSelected(this, true)'>
+                    <img class='panel-tab-image' src='img/error.gif'/>
+                    <span class='panel-tab-text' id='espan'>Error (4)</span>
+                    <img class='expander-arrow sort-descending' src='img/expander_arrow_down.gif'/>
+                    <img class='expander-arrow sort-ascending hidden-element' src='img/expander_arrow_up.gif'/>
+                </a>
+                <a id='warning' href='javascript:void(0);' role='tab' class='button' onclick='severityTabSelected(this, true)'>
+                    <img class='panel-tab-image' src='img/warning.gif'/>
+                    <span class='panel-tab-text' id='wspan'>Warning (1)</span>
+                    <img class='expander-arrow sort-descending' src='img/expander_arrow_down.gif'/>
+                    <img class='expander-arrow sort-ascending hidden-element' src='img/expander_arrow_up.gif'/>
+                </a>
+                <a id='info' href='javascript:void(0);' role='tab' class='button' onclick='severityTabSelected(this, true)'>
+                    <img class='panel-tab-image' src='img/info.gif'/>
+                    <span class='panel-tab-text' id='ispan'>Info (2)</span>
+                    <img class='expander-arrow sort-descending' src='img/expander_arrow_down.gif'/>
+                    <img class='expander-arrow sort-ascending hidden-element' src='img/expander_arrow_up.gif'/>
+                </a>
+                <div class='messages-node-select'>
+                    <span>Messages for:</span>
+                    <select class='node-select' id='node-select' onchange='nodeSelectChanged(this)'>
+                        <option id='select-all' value='all'>All Objects</option>
+                        <option id='select-variable' value=''>Current Object</option>
+                    </select>
+                </div>
+            </div>
+            <div id='innerDiv'>
+                <div class='messages-window'>
+
+<div id='error-messages' class='all'>
+<div class='message-flex-body'>
+<div data-estimate='2.5' data-severity='error' class='conversion-message'>
+<tbody>
+  <tr>
+    <td>
+      <a onclick="toggle(this)" href="javascript:void(0);" class="expander-link" role="button" aria-label="A2SS0042 : Crosstab query is not supported, collapsed, press Enter to expand">
+        <img class="messageMinimized" src="img/nolines_plus.gif"></img>
+      </a>
+      <img class="tableIcons" src="img/error.gif"></img>
+      &nbsp;
+      <span dataFld="description">
+        <span>A2SS0042</span>
+        <span data-estimate='2.5' class='estimate'>
+        (2.5h)
+        </span>
+        <span>: Crosstab query is not supported</span>
+        <span class='number-of-issues'>(1)</span>
+      </span>
+      <table class="hidden-element">
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="2.5" data-issues="1" data-node-id="f61631bd-72d9-435d-b60b-717c9413b024" style="display: block;" class="node-message f61631bd-72d9-435d-b60b-717c9413b024" onclick="treeNav(&#39;f61631bd-72d9-435d-b60b-717c9413b024&#39;, &#39;A2SS0042&#39;)">
+                    <img src="img/query_error.gif"></img>
+                    Гостиница.[Заполненность номеров] (1), estimated manual conversion time: 2.5 hr(s)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</tbody>
+</div>
+<div data-estimate='0.2' data-severity='error' class='conversion-message'>
+<tbody>
+  <tr>
+    <td>
+      <a onclick="toggle(this)" href="javascript:void(0);" class="expander-link" role="button" aria-label="A2SS0041 : Append query cannot be converted because it is not supported, collapsed, press Enter to expand">
+        <img class="messageMinimized" src="img/nolines_plus.gif"></img>
+      </a>
+      <img class="tableIcons" src="img/error.gif"></img>
+      &nbsp;
+      <span dataFld="description">
+        <span>A2SS0041</span>
+        <span data-estimate='0.2' class='estimate'>
+        (0.2h)
+        </span>
+        <span>: Append query cannot be converted because it is not supported</span>
+        <span class='number-of-issues'>(1)</span>
+      </span>
+      <table class="hidden-element">
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0.2" data-issues="1" data-node-id="bf759aba-81e1-4c3f-8041-247157cee06a" style="display: block;" class="node-message bf759aba-81e1-4c3f-8041-247157cee06a" onclick="treeNav(&#39;bf759aba-81e1-4c3f-8041-247157cee06a&#39;, &#39;A2SS0041&#39;)">
+                    <img src="img/query_error.gif"></img>
+                    Гостиница.[Добавление должностей] (1), estimated manual conversion time: 0.2 hr(s)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</tbody>
+</div>
+<div data-estimate='0.2' data-severity='error' class='conversion-message'>
+<tbody>
+  <tr>
+    <td>
+      <a onclick="toggle(this)" href="javascript:void(0);" class="expander-link" role="button" aria-label="A2SS0044 : Delete query is not supported, collapsed, press Enter to expand">
+        <img class="messageMinimized" src="img/nolines_plus.gif"></img>
+      </a>
+      <img class="tableIcons" src="img/error.gif"></img>
+      &nbsp;
+      <span dataFld="description">
+        <span>A2SS0044</span>
+        <span data-estimate='0.2' class='estimate'>
+        (0.2h)
+        </span>
+        <span>: Delete query is not supported</span>
+        <span class='number-of-issues'>(1)</span>
+      </span>
+      <table class="hidden-element">
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0.2" data-issues="1" data-node-id="532041a5-1683-471f-bfd4-59c345b915cb" style="display: block;" class="node-message 532041a5-1683-471f-bfd4-59c345b915cb" onclick="treeNav(&#39;532041a5-1683-471f-bfd4-59c345b915cb&#39;, &#39;A2SS0044&#39;)">
+                    <img src="img/query_error.gif"></img>
+                    Гостиница.[Удаление клиента] (1), estimated manual conversion time: 0.2 hr(s)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</tbody>
+</div>
+<div data-estimate='0.2' data-severity='error' class='conversion-message'>
+<tbody>
+  <tr>
+    <td>
+      <a onclick="toggle(this)" href="javascript:void(0);" class="expander-link" role="button" aria-label="A2SS0046 : Update query is not supported, collapsed, press Enter to expand">
+        <img class="messageMinimized" src="img/nolines_plus.gif"></img>
+      </a>
+      <img class="tableIcons" src="img/error.gif"></img>
+      &nbsp;
+      <span dataFld="description">
+        <span>A2SS0046</span>
+        <span data-estimate='0.2' class='estimate'>
+        (0.2h)
+        </span>
+        <span>: Update query is not supported</span>
+        <span class='number-of-issues'>(1)</span>
+      </span>
+      <table class="hidden-element">
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0.2" data-issues="1" data-node-id="5e07a4a1-f234-442d-92f8-04a55fc9b14c" style="display: block;" class="node-message 5e07a4a1-f234-442d-92f8-04a55fc9b14c" onclick="treeNav(&#39;5e07a4a1-f234-442d-92f8-04a55fc9b14c&#39;, &#39;A2SS0046&#39;)">
+                    <img src="img/query_error.gif"></img>
+                    Гостиница.[Обновление з/п] (1), estimated manual conversion time: 0.2 hr(s)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</tbody>
+</div>
+</div>
+</div>
+<div id='warning-messages' class='all'>
+<div class='message-flex-body'>
+<div data-estimate='0.0' data-severity='warning' class='conversion-message'>
+<tbody>
+  <tr>
+    <td>
+      <a onclick="toggle(this)" href="javascript:void(0);" class="expander-link" role="button" aria-label="A2SS0030 : Identifier name might cause problems, collapsed, press Enter to expand">
+        <img class="messageMinimized" src="img/nolines_plus.gif"></img>
+      </a>
+      <img class="tableIcons" src="img/warning.gif"></img>
+      &nbsp;
+      <span dataFld="description">
+        <span>A2SS0030</span>
+        <span data-estimate='0' class='estimate'>
+        
+        </span>
+        <span>: Identifier name might cause problems</span>
+        <span class='number-of-issues'>(37)</span>
+      </span>
+      <table class="hidden-element">
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="038ad313-debf-4d62-959e-855be6ebac43" style="display: block;" class="node-message 038ad313-debf-4d62-959e-855be6ebac43" onclick="treeNav(&#39;038ad313-debf-4d62-959e-855be6ebac43&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/table_warning.gif"></img>
+                    Гостиница.[Должности] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="0e7c1486-bfb9-4751-b00f-aaec3a3fcef7" style="display: block;" class="node-message 0e7c1486-bfb9-4751-b00f-aaec3a3fcef7" onclick="treeNav(&#39;0e7c1486-bfb9-4751-b00f-aaec3a3fcef7&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/query_warning.gif"></img>
+                    Гостиница.[~TMPCLP97891] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="21439787-49df-44c2-afe6-09799acc3d3f" style="display: block;" class="node-message 21439787-49df-44c2-afe6-09799acc3d3f" onclick="treeNav(&#39;21439787-49df-44c2-afe6-09799acc3d3f&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/foreign_key_warning.gif"></img>
+                    Гостиница.[Номера].[Состояние номераНомера] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="25ec2391-5b1f-4134-9bc7-2976b77ec7e9" style="display: block;" class="node-message 25ec2391-5b1f-4134-9bc7-2976b77ec7e9" onclick="treeNav(&#39;25ec2391-5b1f-4134-9bc7-2976b77ec7e9&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/query_warning.gif"></img>
+                    Гостиница.[Проживание в отеле] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="295ac4db-f268-4dd2-a299-6c2aee518808" style="display: block;" class="node-message 295ac4db-f268-4dd2-a299-6c2aee518808" onclick="treeNav(&#39;295ac4db-f268-4dd2-a299-6c2aee518808&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/index_warning.gif"></img>
+                    Гостиница.[Категория номеров].[Категория номеровКатегория] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="2" data-node-id="2b95d9cc-b24f-48ac-ac5d-ad936e69ee8c" style="display: block;" class="node-message 2b95d9cc-b24f-48ac-ac5d-ad936e69ee8c" onclick="treeNav(&#39;2b95d9cc-b24f-48ac-ac5d-ad936e69ee8c&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/table_warning.gif"></img>
+                    Гостиница.[Сотрудники] (2)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="2f787a0c-b516-4e6c-bc70-b7d2a267d495" style="display: block;" class="node-message 2f787a0c-b516-4e6c-bc70-b7d2a267d495" onclick="treeNav(&#39;2f787a0c-b516-4e6c-bc70-b7d2a267d495&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/unique_constraint_warning.gif"></img>
+                    Гостиница.[Состояние номера].[PrimaryKey] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="318ea173-1575-4a70-961f-97dfc8d3de61" style="display: block;" class="node-message 318ea173-1575-4a70-961f-97dfc8d3de61" onclick="treeNav(&#39;318ea173-1575-4a70-961f-97dfc8d3de61&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/query_warning.gif"></img>
+                    Гостиница.[Совершеннолетние проживающие] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="3e9a4239-a91f-4405-81b5-6e8bc9aee235" style="display: block;" class="node-message 3e9a4239-a91f-4405-81b5-6e8bc9aee235" onclick="treeNav(&#39;3e9a4239-a91f-4405-81b5-6e8bc9aee235&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/query_warning.gif"></img>
+                    Гостиница.[для наклеек] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="4" data-node-id="4dc5b5ac-f22e-453a-9243-28126ab39865" style="display: block;" class="node-message 4dc5b5ac-f22e-453a-9243-28126ab39865" onclick="treeNav(&#39;4dc5b5ac-f22e-453a-9243-28126ab39865&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/table_warning.gif"></img>
+                    Гостиница.[Состояние номера] (4)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="576ffcca-9e38-4f20-bc67-2f0f30e4c991" style="display: block;" class="node-message 576ffcca-9e38-4f20-bc67-2f0f30e4c991" onclick="treeNav(&#39;576ffcca-9e38-4f20-bc67-2f0f30e4c991&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/primary_key_warning.gif"></img>
+                    Гостиница.[Категория номеров].[PrimaryKey] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="5" data-node-id="59001a18-e507-4195-a944-ab804b7560fa" style="display: block;" class="node-message 59001a18-e507-4195-a944-ab804b7560fa" onclick="treeNav(&#39;59001a18-e507-4195-a944-ab804b7560fa&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/table_warning.gif"></img>
+                    Гостиница.[Категория номеров] (5)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="63721857-0d33-4141-8f34-73b25157c327" style="display: block;" class="node-message 63721857-0d33-4141-8f34-73b25157c327" onclick="treeNav(&#39;63721857-0d33-4141-8f34-73b25157c327&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/query_warning.gif"></img>
+                    Гостиница.[Категория номеров Запрос] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="7243c563-4d96-438b-bd98-b115a21ffc3e" style="display: block;" class="node-message 7243c563-4d96-438b-bd98-b115a21ffc3e" onclick="treeNav(&#39;7243c563-4d96-438b-bd98-b115a21ffc3e&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/query_warning.gif"></img>
+                    Гостиница.[Поиск по категории] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="a20fa4a7-7add-4d8f-bdf0-7b44f9cacdc4" style="display: block;" class="node-message a20fa4a7-7add-4d8f-bdf0-7b44f9cacdc4" onclick="treeNav(&#39;a20fa4a7-7add-4d8f-bdf0-7b44f9cacdc4&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/table_warning.gif"></img>
+                    Гостиница.[Номера] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="7" data-node-id="a5bbba84-2b05-4611-a242-4e72c29e4f5b" style="display: block;" class="node-message a5bbba84-2b05-4611-a242-4e72c29e4f5b" onclick="treeNav(&#39;a5bbba84-2b05-4611-a242-4e72c29e4f5b&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/table_warning.gif"></img>
+                    Гостиница.[Клиенты] (7)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="c412f6d9-fa59-4fcc-a601-368ffc3fb19d" style="display: block;" class="node-message c412f6d9-fa59-4fcc-a601-368ffc3fb19d" onclick="treeNav(&#39;c412f6d9-fa59-4fcc-a601-368ffc3fb19d&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/table_warning.gif"></img>
+                    Гостиница.[Отзывы] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="c4ebea58-3179-4c1b-80eb-8f3c632aaac9" style="display: block;" class="node-message c4ebea58-3179-4c1b-80eb-8f3c632aaac9" onclick="treeNav(&#39;c4ebea58-3179-4c1b-80eb-8f3c632aaac9&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/foreign_key_warning.gif"></img>
+                    Гостиница.[Номера].[Категория номеровНомера] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="d0dd2c6f-0b29-4e04-8504-3a58a77a903c" style="display: block;" class="node-message d0dd2c6f-0b29-4e04-8504-3a58a77a903c" onclick="treeNav(&#39;d0dd2c6f-0b29-4e04-8504-3a58a77a903c&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/query_warning.gif"></img>
+                    Гостиница.[Общее количество мест] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="d305cdff-e4f5-4a36-8272-44785be5d3a8" style="display: block;" class="node-message d305cdff-e4f5-4a36-8272-44785be5d3a8" onclick="treeNav(&#39;d305cdff-e4f5-4a36-8272-44785be5d3a8&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/foreign_key_warning.gif"></img>
+                    Гостиница.[Состояние номера].[СотрудникиСостояние номера] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="db879a71-a390-40e4-95ea-bbbb25fb733a" style="display: block;" class="node-message db879a71-a390-40e4-95ea-bbbb25fb733a" onclick="treeNav(&#39;db879a71-a390-40e4-95ea-bbbb25fb733a&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/primary_key_warning.gif"></img>
+                    Гостиница.[Состояние номера].[PrimaryKey1] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="e24654b9-0179-4c48-b66d-db64689b56bc" style="display: block;" class="node-message e24654b9-0179-4c48-b66d-db64689b56bc" onclick="treeNav(&#39;e24654b9-0179-4c48-b66d-db64689b56bc&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/foreign_key_warning.gif"></img>
+                    Гостиница.[Клиенты].[Состояние номераКлиент] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="fc8b56ad-141b-4014-987a-c8d5d8438f86" style="display: block;" class="node-message fc8b56ad-141b-4014-987a-c8d5d8438f86" onclick="treeNav(&#39;fc8b56ad-141b-4014-987a-c8d5d8438f86&#39;, &#39;A2SS0030&#39;)">
+                    <img src="img/unique_constraint_warning.gif"></img>
+                    Гостиница.[Номера].[Состояние номераНомера] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</tbody>
+</div>
+</div>
+</div>
+<div id='info-messages' class='all'>
+<div class='message-flex-body'>
+<div data-estimate='0.0' data-severity='info' class='conversion-message'>
+<tbody>
+  <tr>
+    <td>
+      <a onclick="toggle(this)" href="javascript:void(0);" class="expander-link" role="button" aria-label="A2SS0020 : New timestamp column created, collapsed, press Enter to expand">
+        <img class="messageMinimized" src="img/nolines_plus.gif"></img>
+      </a>
+      <img class="tableIcons" src="img/info.gif"></img>
+      &nbsp;
+      <span dataFld="description">
+        <span>A2SS0020</span>
+        <span data-estimate='0' class='estimate'>
+        
+        </span>
+        <span>: New timestamp column created</span>
+        <span class='number-of-issues'>(1)</span>
+      </span>
+      <table class="hidden-element">
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="c412f6d9-fa59-4fcc-a601-368ffc3fb19d" style="display: block;" class="node-message c412f6d9-fa59-4fcc-a601-368ffc3fb19d" onclick="treeNav(&#39;c412f6d9-fa59-4fcc-a601-368ffc3fb19d&#39;, &#39;A2SS0020&#39;)">
+                    <img src="img/table_info.gif"></img>
+                    Гостиница.[Отзывы] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</tbody>
+</div>
+<div data-estimate='0.0' data-severity='info' class='conversion-message'>
+<tbody>
+  <tr>
+    <td>
+      <a onclick="toggle(this)" href="javascript:void(0);" class="expander-link" role="button" aria-label="A2SS0029 : Identifier name was changed, collapsed, press Enter to expand">
+        <img class="messageMinimized" src="img/nolines_plus.gif"></img>
+      </a>
+      <img class="tableIcons" src="img/info.gif"></img>
+      &nbsp;
+      <span dataFld="description">
+        <span>A2SS0029</span>
+        <span data-estimate='0' class='estimate'>
+        
+        </span>
+        <span>: Identifier name was changed</span>
+        <span class='number-of-issues'>(16)</span>
+      </span>
+      <table class="hidden-element">
+        <tbody>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="048efede-7c6d-41f3-8df7-b138fa6a3ee8" style="display: block;" class="node-message 048efede-7c6d-41f3-8df7-b138fa6a3ee8" onclick="treeNav(&#39;048efede-7c6d-41f3-8df7-b138fa6a3ee8&#39;, &#39;A2SS0029&#39;)">
+                    <img src="img/primary_key_info.gif"></img>
+                    Гостиница.[Номера].[PrimaryKey] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="21439787-49df-44c2-afe6-09799acc3d3f" style="display: block;" class="node-message 21439787-49df-44c2-afe6-09799acc3d3f" onclick="treeNav(&#39;21439787-49df-44c2-afe6-09799acc3d3f&#39;, &#39;A2SS0029&#39;)">
+                    <img src="img/foreign_key_info.gif"></img>
+                    Гостиница.[Номера].[Состояние номераНомера] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="295ac4db-f268-4dd2-a299-6c2aee518808" style="display: block;" class="node-message 295ac4db-f268-4dd2-a299-6c2aee518808" onclick="treeNav(&#39;295ac4db-f268-4dd2-a299-6c2aee518808&#39;, &#39;A2SS0029&#39;)">
+                    <img src="img/index_info.gif"></img>
+                    Гостиница.[Категория номеров].[Категория номеровКатегория] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="2f787a0c-b516-4e6c-bc70-b7d2a267d495" style="display: block;" class="node-message 2f787a0c-b516-4e6c-bc70-b7d2a267d495" onclick="treeNav(&#39;2f787a0c-b516-4e6c-bc70-b7d2a267d495&#39;, &#39;A2SS0029&#39;)">
+                    <img src="img/unique_constraint_info.gif"></img>
+                    Гостиница.[Состояние номера].[PrimaryKey] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="3af45fd2-b26c-49b3-b862-4ab2b14d3622" style="display: block;" class="node-message 3af45fd2-b26c-49b3-b862-4ab2b14d3622" onclick="treeNav(&#39;3af45fd2-b26c-49b3-b862-4ab2b14d3622&#39;, &#39;A2SS0029&#39;)">
+                    <img src="img/primary_key_info.gif"></img>
+                    Гостиница.[Сотрудники].[PrimaryKey] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="4e0fc22c-163d-47b4-8502-00977d53b4db" style="display: block;" class="node-message 4e0fc22c-163d-47b4-8502-00977d53b4db" onclick="treeNav(&#39;4e0fc22c-163d-47b4-8502-00977d53b4db&#39;, &#39;A2SS0029&#39;)">
+                    <img src="img/index_info.gif"></img>
+                    Гостиница.[Должности].[ДолжностиДолжность] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="576ffcca-9e38-4f20-bc67-2f0f30e4c991" style="display: block;" class="node-message 576ffcca-9e38-4f20-bc67-2f0f30e4c991" onclick="treeNav(&#39;576ffcca-9e38-4f20-bc67-2f0f30e4c991&#39;, &#39;A2SS0029&#39;)">
+                    <img src="img/primary_key_info.gif"></img>
+                    Гостиница.[Категория номеров].[PrimaryKey] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="5da1a3dc-a766-42b5-9008-679b73319c8c" style="display: block;" class="node-message 5da1a3dc-a766-42b5-9008-679b73319c8c" onclick="treeNav(&#39;5da1a3dc-a766-42b5-9008-679b73319c8c&#39;, &#39;A2SS0029&#39;)">
+                    <img src="img/foreign_key_info.gif"></img>
+                    Гостиница.[Сотрудники].[ДолжностиСотрудники] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="92d9728c-c851-4944-8732-7386df1162bb" style="display: block;" class="node-message 92d9728c-c851-4944-8732-7386df1162bb" onclick="treeNav(&#39;92d9728c-c851-4944-8732-7386df1162bb&#39;, &#39;A2SS0029&#39;)">
+                    <img src="img/primary_key_info.gif"></img>
+                    Гостиница.[Отзывы].[PrimaryKey] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="9c595fc7-142f-430e-9019-0c8e5080ad9e" style="display: block;" class="node-message 9c595fc7-142f-430e-9019-0c8e5080ad9e" onclick="treeNav(&#39;9c595fc7-142f-430e-9019-0c8e5080ad9e&#39;, &#39;A2SS0029&#39;)">
+                    <img src="img/primary_key_info.gif"></img>
+                    Гостиница.[Должности].[PrimaryKey] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="c4ebea58-3179-4c1b-80eb-8f3c632aaac9" style="display: block;" class="node-message c4ebea58-3179-4c1b-80eb-8f3c632aaac9" onclick="treeNav(&#39;c4ebea58-3179-4c1b-80eb-8f3c632aaac9&#39;, &#39;A2SS0029&#39;)">
+                    <img src="img/foreign_key_info.gif"></img>
+                    Гостиница.[Номера].[Категория номеровНомера] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="d305cdff-e4f5-4a36-8272-44785be5d3a8" style="display: block;" class="node-message d305cdff-e4f5-4a36-8272-44785be5d3a8" onclick="treeNav(&#39;d305cdff-e4f5-4a36-8272-44785be5d3a8&#39;, &#39;A2SS0029&#39;)">
+                    <img src="img/foreign_key_info.gif"></img>
+                    Гостиница.[Состояние номера].[СотрудникиСостояние номера] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="db879a71-a390-40e4-95ea-bbbb25fb733a" style="display: block;" class="node-message db879a71-a390-40e4-95ea-bbbb25fb733a" onclick="treeNav(&#39;db879a71-a390-40e4-95ea-bbbb25fb733a&#39;, &#39;A2SS0029&#39;)">
+                    <img src="img/primary_key_info.gif"></img>
+                    Гостиница.[Состояние номера].[PrimaryKey1] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="e24654b9-0179-4c48-b66d-db64689b56bc" style="display: block;" class="node-message e24654b9-0179-4c48-b66d-db64689b56bc" onclick="treeNav(&#39;e24654b9-0179-4c48-b66d-db64689b56bc&#39;, &#39;A2SS0029&#39;)">
+                    <img src="img/foreign_key_info.gif"></img>
+                    Гостиница.[Клиенты].[Состояние номераКлиент] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="fc8b56ad-141b-4014-987a-c8d5d8438f86" style="display: block;" class="node-message fc8b56ad-141b-4014-987a-c8d5d8438f86" onclick="treeNav(&#39;fc8b56ad-141b-4014-987a-c8d5d8438f86&#39;, &#39;A2SS0029&#39;)">
+                    <img src="img/unique_constraint_info.gif"></img>
+                    Гостиница.[Номера].[Состояние номераНомера] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <div>
+                <div style="CURSOR: pointer; POSITION: relative; LEFT: 43px">
+                  <a href="javascript:void(0);" role="button" data-estimate="0" data-issues="1" data-node-id="fd806029-ea91-4fb3-83b5-ac554227dba1" style="display: block;" class="node-message fd806029-ea91-4fb3-83b5-ac554227dba1" onclick="treeNav(&#39;fd806029-ea91-4fb3-83b5-ac554227dba1&#39;, &#39;A2SS0029&#39;)">
+                    <img src="img/primary_key_info.gif"></img>
+                    Гостиница.[Клиенты].[PrimaryKey] (1)</a>
+                </div>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </td>
+  </tr>
+</tbody>
+</div>
+</div>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
